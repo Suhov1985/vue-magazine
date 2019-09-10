@@ -1,0 +1,32 @@
+.Counter
+	.quantity-select
+		display: inline-block
+		border: 1px solid $color-gray-light
+		border-radius: $border-radius
+		.number
+			display: inline-block
+			padding: 0 $margin-half
+		.minus
+			display: inline-block
+			width: 30px
+			height: 30px
+			border-radius: $border-radius
+			text-align: center
+			background: $color-main-active
+			color: #fff
+			cursor: pointer
+			&.disabled
+				cursor: not-allowed
+				opacity: .5
+		.plus
+			display: inline-block
+			width: 30px
+			height: 30px
+			border-radius: $border-radius
+			text-align: center
+			background: $color-main-active
+			color: #fff
+			cursor: pointer
+			&.disabled
+				cursor: not-allowed
+				opacity: .5

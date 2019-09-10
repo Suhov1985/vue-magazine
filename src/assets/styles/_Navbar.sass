@@ -1,0 +1,47 @@
+.navbar-brand
+	display: inline-block
+	padding: 0px
+	height: auto
+	width: 40px
+	position: absolute
+	top: 50%
+	left: 30px
+	transform: translateY(-50%)
+	img
+		display: inline-block
+		width: 100%
+.navbar-collapse
+	@media (max-width: $media-width-sm)
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		background-color: #343a40
+		padding-left: $margin-half
+	.navbar-nav
+		.nav-item
+			&.active
+				.nav-link
+					color: $color-main-active
+			.nav-link
+				&:hover, &:active
+					color: $color-main-active
+				span
+					position: relative
+					.count
+						position: absolute
+						display: inline-block
+						width: 16px
+						height: 16px
+						border-radius: 100%
+						background: $color-main-active
+						text-align: center
+						top: -8px
+						right: -10px
+						font-size: 12px
+						line-height: 16px
+						color: #fff
+
+.navbar
+	@media (max-width: $media-width-sm)
+		justify-content: flex-end

@@ -1,0 +1,38 @@
+*
+	box-sizing: border-box
+
+h1
+	font-size: $h1-size
+	line-height: $h1-lh
+	margin-bottom: $margin-half
+
+img
+	max-width: 100%
+
+a
+	cursor: pointer
+	&:hover, &:active
+		color: $color-main-active
+
+#app
+	padding-top: $margin-full*2
+
+.btn
+	background: $color-main-active
+	color: #fff
+	transition: all .3s ease-in-out
+	&:hover
+		opacity: .8
+		color: #fff
+		transition: all .3s ease-in-out
+
+.pagination-wrap
+	display: block
+	width: 100%
+	margin: $margin-full 0
+	.pagination
+		.page-item
+			&.active
+				&:hover
+					.page-link
+						color: #fff
