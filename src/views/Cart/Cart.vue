@@ -60,7 +60,7 @@
             sortProducts () {
                 let products = this.buyProducts
                 return products.sort(function (product1, product2) {
-                    return (Number(product1.addTime) > Number(product2.addTime)) ? 1 : -1
+                    return (Number(product1.addTime) > Number(product2.addTime)) ? -1 : 1
                 })
             },
             // Подсчет общей цены
